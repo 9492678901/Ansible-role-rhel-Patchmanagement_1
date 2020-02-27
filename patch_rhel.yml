@@ -6,7 +6,7 @@
       group_by: key=os_{{ ansible_distribution }}
       changed_when: False
 
-- hosts: os_RedHat
+- hosts: all
   become: true
   roles:
-    - ansible-role-rhel-patchmanagement 
+    - rhel-patchmanagement
